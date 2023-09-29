@@ -589,6 +589,7 @@ const init = () => {
             displaySlider();
             displayPopularMovies();
             break;
+        case: "/shows":
         case "/shows.html":
             console.log("tv shows");
             displayPopularShows();
