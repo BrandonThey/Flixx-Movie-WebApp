@@ -190,6 +190,8 @@ const displayPopularShows = async () => {
     //destructure the results array to retrieve it from the API data
     const {results} = await fetchAPIData("tv/popular");
 
+    console.log(results);
+    
     //creating a tv show card for each tv show we fetched
     results.forEach((show) => {
         const showDiv = document.createElement("div");
