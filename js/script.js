@@ -22,6 +22,8 @@ const fetchAPIData = async (endpoint) => {
     //while fetching the data, show the loading spinner
     showSpinner();
 
+    console.log(endpoint);
+    
     //fetching at the "url/endpoint?api_key=ourKey&language=en-US"
     //using backticks to wrap our string
     //all query strings found in the documentation here:
@@ -591,6 +593,7 @@ const init = () => {
             displayPopularMovies();
             break;
         case "/shows.html":
+            console.log("Shows);
             displayPopularShows();
             break;
         case "/movie-details.html":
