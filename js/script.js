@@ -22,8 +22,6 @@ const fetchAPIData = async (endpoint) => {
     //while fetching the data, show the loading spinner
     showSpinner();
 
-    console.log(endpoint);
-    
     //fetching at the "url/endpoint?api_key=ourKey&language=en-US"
     //using backticks to wrap our string
     //all query strings found in the documentation here:
@@ -192,8 +190,6 @@ const displayPopularShows = async () => {
     //destructure the results array to retrieve it from the API data
     const {results} = await fetchAPIData("tv/popular");
 
-    console.log(results);
-    
     //creating a tv show card for each tv show we fetched
     results.forEach((show) => {
         const showDiv = document.createElement("div");
@@ -593,7 +589,6 @@ const init = () => {
             displayPopularMovies();
             break;
         case "/shows.html":
-            console.log("Shows");
             displayPopularShows();
             break;
         case "/movie-details.html":
