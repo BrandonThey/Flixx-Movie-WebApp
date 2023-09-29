@@ -593,7 +593,7 @@ const init = () => {
             displayPopularMovies();
             break;
         case "/shows.html":
-            console.log("Shows);
+            console.log("Shows");
             displayPopularShows();
             break;
         case "/movie-details.html":
