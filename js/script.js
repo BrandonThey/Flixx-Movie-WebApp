@@ -585,19 +585,24 @@ const init = () => {
         // the / and the index.html pages are the same
         case "/":
         case "/index.html":
+            console.log("index");
             displaySlider();
             displayPopularMovies();
             break;
         case "/shows.html":
+            console.log("tv shows");
             displayPopularShows();
             break;
         case "/movie-details.html":
+            console.log("movie details");
             displayMovieDetails();
             break;
         case "/tv-details.html":
+            console.log("tv details");
             displayShowDetails();
             break;
         case "/search.html":
+            console.log("saerch");
             search();
             break;
     }
